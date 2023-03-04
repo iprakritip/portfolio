@@ -1,0 +1,75 @@
+    .container {
+        background: linear-gradient(to bottom, #00798C, #050F22);
+        .work {
+            min-height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            opacity: 0;
+            animation: fadeInRegular 1s forwards 0.8s;
+            img {
+                height: 50px;
+                margin: 0px 15px;
+                opacity: 0.8;
+            }:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .intro {
+        min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: $mainFont;
+        :nth-child(1) {
+            padding: 20px;
+            font-size: 60px;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in forwards;
+        }
+        :nth-child(2) {
+            padding: 20px;
+            font-size: 35px;
+            animation: fadeIn 0.5s ease-in forwards 0.2s;
+            opacity: 0;
+        }
+        #arrow {
+            animation: arrow 0.5s infinite ease-in alternate;
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInRegular {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes arrow {
+        from {
+            opacity: 0.5;
+            transform: translateY(0px);
+        }
+        to {
+            opacity: 0.3;
+            transform: translateY(20px);
+        }
+    }

@@ -1,0 +1,177 @@
+#about {
+    min-height: 100vh;
+    background: url('./../dest/img/Portofolio Background1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .panel {
+        color: white;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        min-height: 60vh;
+        .myself {
+            flex: 2;
+            img {
+                height: 300px;
+                border-radius: 50%;
+            }
+        }
+        .boxes {
+            min-height: 50vh;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex: 1;
+                h1 {
+                    font-size: 45px;
+                    font-family: $mainFont;
+                    margin: 5px 0px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 2em;
+                    font-family: $secondFont;
+                }
+                span {
+                    color: #BC402D;
+                }
+            }
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex: 1;
+                .skills {
+                    img:hover {
+                        transition: transform 0.5s;
+                        transform: scale(1.2, 1.2);
+                    }
+                }
+                h1 {
+                    font-size: 45px;
+                    font-family: $mainFont;
+                    margin: 5px 0px;
+                }
+                .skills {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    .row1 {
+                        display: flex;
+                        img {
+                            flex: 1;
+                        }
+                    }
+                    img {
+                        padding: 20px 20px 0px 0px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+    #star {
+        position: absolute;
+        height: 10px;
+        top: 50px;
+        opacity: 0;
+        transform: translate(0px, 0px);
+        transition: all 1s;
+    }
+    .to-projects {
+        min-height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@keyframes starFall {
+    0% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(200px, 300px);
+    }
+}
+
+@keyframes starFall2 {
+    0% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-100px, 0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-200px, 300px);
+    }
+}
+
+@keyframes starFall3 {
+    0% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(200px, 0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-150px, 180px);
+    }
+}
+
+@keyframes starFall4 {
+    0% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translate(200px, 100px);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(130px, 200px);
+    }
+}
